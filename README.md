@@ -1,6 +1,8 @@
 # Bride-side Hindi Invitation 2H
 
 - Published URL: https://adityadubey1313-oss.github.io/adisiddhi_56/
+- Typography refinement: [index.html](index.html) and [app.js](app.js) keep the bride/groom names at their existing heading size and bold weight while rendering their introductory titles at 70% size. [styles.css](styles.css) adds salutation spacing and increases schedule dates from 21.2px to 23.2px and timings from 14.2px to 16.2px at the default 16px root size; both use weight 700. [invitation-data.js](invitation-data.js) removes only the stray venue-heading quotation marks. Existing fonts, colors, artwork, animations, schedules and family wording remain unchanged.
+- Prayer presentation: this version alone wraps its existing post-invitation invocation in one `.invitation-prayer` block, with balanced spacing, subtle dividers, bold Om/Ganesh lines and slightly smaller italic Sanskrit verses. The four original lines, including punctuation and whitespace, are unchanged; `break-inside: avoid` keeps the block together when printing.
 - Authoritative source: `निमन्त्रण पत्र  द्वितीय .docx`, supplied from Downloads. Wording is copied as Unicode text without translation, spelling normalization or digit substitution.
 - Source scope: 5 events.
 - Architecture reference: published 3H uses the original portrait/gradient cover, Hindi Noto fonts, invitation story, schedule-day timeline, venue cards, native contact dialog and WhatsApp sharing. Natural scrolling and reduced-motion behavior are retained. The corrected 3H story markup closes before the schedule; other versions keep their package architecture and applicable family sections.
