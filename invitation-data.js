@@ -194,7 +194,7 @@
     "start": "13:00",
     "end": "14:30",
     "venueId": "hotelGulzar",
-    "timeText": "दोपहर १ बजे से २.३०बजे तक ",
+    "timeText": "दोपहर १२.३० बजे से २ बजे तक ",
     "programTitle": "।।  वैवाहिक कार्यक्रम ।।"
   },
   {
@@ -224,7 +224,7 @@
     "start": "19:30",
     "end": null,
     "venueId": "hotelGulzar",
-    "timeText": "संध्या ७.३० बजे से ",
+    "timeText": "संध्या ७ बजे से ",
     "programTitle": "।।  वैवाहिक कार्यक्रम ।।"
   },
   {
