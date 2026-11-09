@@ -174,12 +174,22 @@ function renderSourceInvitation() {
   source.greetings.forEach((lines) => {
     const block = document.createElement('article');
     block.className = 'family-group';
-    const heading = document.createElement('h3');
-    heading.className = 'family-role source-paragraph';
+    const isFamilySubheading = lines[0] === 'वधू के सभी:';
+    const heading = document.createElement(isFamilySubheading ? 'h4' : 'h3');
+    heading.className = `${isFamilySubheading ? 'family-subheading' : 'family-role'} source-paragraph`;
     heading.textContent = lines[0];
     const names = document.createElement('div');
     names.className = 'family-names';
-    appendSourceLines(names, lines.slice(1));
+    lines.slice(1).forEach((line) => {
+      if (line === 'वधू के सभी:') {
+        const subheading = document.createElement('h4');
+        subheading.className = 'family-subheading source-paragraph';
+        subheading.textContent = line;
+        names.appendChild(subheading);
+      } else {
+        appendSourceLines(names, [line]);
+      }
+    });
     block.append(heading, names);
     greetings.appendChild(block);
   });
